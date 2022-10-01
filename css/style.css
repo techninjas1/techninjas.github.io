@@ -1,0 +1,274 @@
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: var(--bs-danger);
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #161A1D;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #E5383B;
+    --bs-light: #f8f9fa;
+    --bs-dark: #0B090A;
+    --bs-primary-rgb: 13, 110, 253;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 33, 37, 41;
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #212529;
+    --bs-body-bg: #fff;
+    --bs-border-width: 1px;
+    --bs-border-style: solid;
+    --bs-border-color: #dee2e6;
+    --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+    --bs-border-radius: 0.375rem;
+    --bs-border-radius-sm: 0.25rem;
+    --bs-border-radius-lg: 0.5rem;
+    --bs-border-radius-xl: 1rem;
+    --bs-border-radius-2xl: 2rem;
+    --bs-border-radius-pill: 50rem;
+    --bs-link-color: #0d6efd;
+    --bs-link-hover-color: #0a58ca;
+    --bs-code-color: #d63384;
+    --bs-highlight-bg: #fff3cd;
+}
+
+* {
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-danger {
+    color: var(--bs-danger) !important;
+}
+
+.bg-dark {
+    background-color: var(--bs-dark) !important;
+}
+
+.text-bg-secondary {
+    background-color: var(--bs-secondary) !important;
+}
+
+.btn-outline-danger {
+    --bs-btn-color: var(--bs-danger);
+    --bs-btn-border-color: var(--bs-danger);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--bs-danger);
+    --bs-btn-hover-border-color: var(--bs-danger);
+    --bs-btn-focus-shadow-rgb: 220, 53, 69;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-danger);
+    --bs-btn-active-border-color: var(--bs-danger);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--bs-danger);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--bs-danger);
+    --bs-gradient: none;
+}
+
+.circulo {
+    width: 400px;
+    height: 400px;
+}
+
+.shadow-lg-danger {
+    box-shadow: 0px 0px 50px var(--bs-danger);
+}
+
+@keyframes text-changer {
+    8% {
+        color: var(--bs-gray);
+        content: 'Scientist';
+    }
+
+    16% {
+        color: var(--bs-gray);
+        content: 'Tech';
+    }
+
+    24% {
+        color: var(--bs-gray);
+        content: 'Innovator';
+    }
+
+    32% {
+        color: var(--bs-gray);
+        content: 'TechNinja';
+
+    }
+
+    40% {
+        color: var(--bs-danger);
+        content: 'TechNinja';
+    }
+
+    100% {
+        color: var(--bs-danger);
+        content: 'TechNinja';
+    }
+}
+
+.text-animation::after {
+    content: 'TechNinja';
+    color: var(--bs-danger);
+    animation: text-changer 18s infinite;
+}
+
+@keyframes text-changerp {
+    0% {
+        content: 'Venha com a gente e descubra mais sobre nossa equipe, seus integrantes, funcionalidades, componentes e desfrute dessa experiência';
+        opacity: 0;
+    }
+    
+    32% {
+        opacity: 0;
+        content: 'Venha com a gente e descubra mais sobre nossa equipe, seus integrantes, funcionalidades, componentes e desfrute dessa experiência';
+    }
+    50% {
+        opacity: 1;
+        content: 'Venha com a gente e descubra mais sobre nossa equipe, seus integrantes, funcionalidades, componentes e desfrute dessa experiência';
+    }
+    100% {
+        opacity: 1;
+        content: 'Venha com a gente e descubra mais sobre nossa equipe, seus integrantes, funcionalidades, componentes e desfrute dessa experiência';
+    }
+
+}
+
+.text-animationp::after {
+    content: 'Venha com a gente e descubra mais sobre nossa equipe, seus integrantes, funcionalidades,componentes e desfrute dessa experiência.';
+    animation: text-changerp 18s;
+}
+.foto-prov{
+    width: 400px;
+    height: 400px;
+}
+.carousel-item{
+   height: 15rem;
+   box-sizing: border-box;
+   overflow: hidden;
+}
+
+.carousel-item img{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@media (min-width: 576px) { 
+    .carousel-item{
+        height: 20rem;
+        box-sizing: border-box;
+        overflow: hidden;
+     }
+     .equip-item{
+        width: 60% !important;
+    }
+     
+ }
+
+@media (min-width: 768px) { 
+    .carousel-item{
+    height: 20rem;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .equip-item{
+    width: 40% !important;
+}
+}
+@media (min-width: 992px) {
+    .carousel-item{
+        height: 32rem;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      .equip-item{
+        width: 40% !important;
+    }
+ }
+
+@media (min-width: 1200px) {
+    .carousel-item{
+        height: 32rem;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      .equip-item{
+        width: 22% !important;
+    }
+ }
+
+@media (min-width: 1400px) {
+    .carousel-item{
+        height: 32rem;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      .equip-item{
+        width: 22% !important;
+    }
+ }
+ .img-animation{
+ transition: .5s;
+ }
+ .img-animation:hover{
+    transform: scale(1.05) ;
+ }
+.equip-item{
+    width: 90%;
+}
+.div-next{
+    width: 100vw;
+    height: 40rem;
+    overflow: hidden;
+}
+.bg-next{
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(180deg, transparent,black), url(/img/NEXT.png);
+    
+    background-position: center;
+    background-size: cover;
+}
